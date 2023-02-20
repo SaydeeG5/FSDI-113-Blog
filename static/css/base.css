@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,900;1,300&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Sacramento&display=swap');
+
+
+
+/* ----------nav bar---------- */
+* {
+    padding: 0; 
+    margin: 0;
+    color: 
+    #434242;
+
+}
+
+.logo {
+    width: 18%;
+}
+
+.divlogo {
+    display: flex;
+    justify-content:center;
+    background-color: 
+    #EDDBC7;
+    align-content: center;
+}
+/* *{box-sizing: border-box;} */
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 35px;
+    color:    #434242;
+    word-spacing: 1px;
+    padding: 5px;width:100vw;
+    
+}
+
+/* ----------about paragraph ---------- */
+
+.about-p {
+    background-color: #EDDBC7;
+    padding: 50px;
+    width: 70%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+}
+
+/* ----------nav bar---------- */
+
+    .nav-horizontal {
+    background-color: #fff;
+    overflow: hidden;
+    height: 3em;
+    width: 100%;
+    display: flex; 
+    align-self: center;
+    }
+
+    .href-base { 
+        word-spacing: 20px;
+    }
+    
+    .mask {
+    height: 5em;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    }
+    
+    .list {
+    display: inline-table;
+    margin: 0 auto;
+    max-width: 100%;
+    }
+    
+    li {
+    display: table-cell;
+    }
+
+    a {
+        display: block;
+        padding: 0 1em;
+        text-decoration: none;
+        color: #333;
+        height: 3em;
+        line-height: 3;
+
+    }
+    a:hover{
+        border: 2px solid    #EDDBC7;
+        /* background-color:#EEEEEE; */
+        color: #EDDBC7;
+        text-transform: uppercase;
+    } 
+    
+/* ----------home.html---------- */
+
+.carousel-inner {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#carouselExampleCaptions {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-top: 3%;
+}
+
+
+/* ----------home cards ----------*/
+.container-home {
+    display:flex;
+    flex-direction: row;
+    column-gap: 15px;
+    justify-content: center;
+    padding: 25px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.btn {
+    background-color:  #EDDBC7;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ----------list (POSTS) ----------*/
+
+.card-title {
+    font-family: 'Montserrat', serif;
+    font-size: 25px;
+}
+
+.card-subtitle {
+    font-family: 'Merriweather', serif;
+}
+
+.card-text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.card-body {
+    background-color: #eee9da46;
+}
+
+.card-link {
+    color: #AACB73;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+}
+
+
+/* ----------new (NEWPOST)---------- */
+
+form {
+    background-color: #EDDBC7;
+    padding: 50px;
+    width: 70%;
+    font-size: 15px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Montserrat', serif;
+}
+
+.btn {
+    background-color:#F0EEED;
+    border-color:#332C39;
+    color: #434242;
+}
+
+.btn:hover{
+    background-color: #EDDBC7;
+    color: #434242;
+    border-color:#332C39;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+
+}

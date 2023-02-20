@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ post.title }}{% endblock title %}
+
+
+{% block content %}
+
+<h1>{{ post.title }}</h1>
+<h3>{{ post.subttitle }}</h3>
+<div class="detail-class">
+<strong>Created on : {{ post.created_on }}</strong>
+<p class="detail-p">{{ post.body}}</p>
+<a href="{% url 'list' %}" class="bi bi-box-arrow-in-left"></i>
+</div>
+{% endblock content %}}
