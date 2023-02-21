@@ -11,17 +11,17 @@
 
 }
 
-.logo {
-    width: 18%;
-}
 
-.divlogo {
+
+
+/* .divlogo {
     display: flex;
     justify-content:center;
     background-color: 
     #EDDBC7;
     align-content: center;
-}
+    width: 15px;
+} */
 /* *{box-sizing: border-box;} */
 
 h1 {
@@ -33,7 +33,7 @@ h1 {
     
 }
 
-/* ----------about paragraph ---------- */
+/* ----------about.html paragraph ---------- */
 
 .about-p {
     background-color: #EDDBC7;
@@ -45,54 +45,7 @@ h1 {
     margin: auto;
 }
 
-/* ----------nav bar---------- */
 
-    .nav-horizontal {
-    background-color: #fff;
-    overflow: hidden;
-    height: 3em;
-    width: 100%;
-    display: flex; 
-    align-self: center;
-    }
-
-    .href-base { 
-        word-spacing: 20px;
-    }
-    
-    .mask {
-    height: 5em;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    }
-    
-    .list {
-    display: inline-table;
-    margin: 0 auto;
-    max-width: 100%;
-    }
-    
-    li {
-    display: table-cell;
-    }
-
-    a {
-        display: block;
-        padding: 0 1em;
-        text-decoration: none;
-        color: #333;
-        height: 3em;
-        line-height: 3;
-
-    }
-    a:hover{
-        border: 2px solid    #EDDBC7;
-        /* background-color:#EEEEEE; */
-        color: #EDDBC7;
-        text-transform: uppercase;
-    } 
-    
 /* ----------home.html---------- */
 
 .carousel-inner {
@@ -185,4 +138,71 @@ form {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
 
+}
+
+/*-----------navbar----------*/
+nav.navbar {
+    display: flex;
+    justify-content: center;
+    background-color:  black;
+    height:50px;
+    
+}
+
+nav.navbar a {
+    margin-right: 20px;
+    color: white; 
+}
+
+a.homeblog {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.logo{
+    width: 40px;
+}
+
+.baselink {
+    text-transform: uppercase;
+    background-color: black;
+    color:#fff;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 5px;
+    transition: all 0.7s ease-in-out 0s;
+    cursor: pointer;
+
+}
+
+.baselink:hover {
+    box-shadow: inset 300px 0 0 0 #fc0;
+    background-color: #fc0;
+    border-radius: 1px;
+    color: black;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    /* nav bar  */
+    nav.menu {
+        height:42px;
+    }
+
+    #about, #lasvegas {
+        display:none;
+    }
+
+    /* cards from home.html */
+    .container-home {
+        display:flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    } 
 }
