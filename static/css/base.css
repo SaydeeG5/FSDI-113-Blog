@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,900;1,300&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,900;1,300&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Sacramento&display=swap');
 
 
 
@@ -6,32 +6,23 @@
 * {
     padding: 0; 
     margin: 0;
-    color: 
-    #434242;
-
+    color:  #434242;
 }
-
-
-
-
-/* .divlogo {
-    display: flex;
-    justify-content:center;
-    background-color: 
-    #EDDBC7;
-    align-content: center;
-    width: 15px;
-} */
-/* *{box-sizing: border-box;} */
 
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 35px;
     color:    #434242;
-    word-spacing: 1px;
-    padding: 5px;width:100vw;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px; 
     
 }
+
+body{
+    background-color: #FEFCF3;
+}
+
 
 /* ----------about.html paragraph ---------- */
 
@@ -43,6 +34,15 @@ h1 {
     font-size: 15px;
     text-align: center;
     margin: auto;
+    border-radius: 5px;
+}
+
+.aboutlogo { 
+    display: flex;
+    justify-content: center;
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 15px; 
 }
 
 
@@ -63,21 +63,12 @@ h1 {
 
 
 /* ----------home cards ----------*/
-.container-home {
-    display:flex;
-    flex-direction: row;
-    column-gap: 15px;
-    justify-content: center;
-    padding: 25px;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    
-}
+
 
 .card {
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
+    
 }
 
 .btn {
@@ -86,11 +77,42 @@ h1 {
     font-family: 'Raleway', sans-serif;
 }
 
-/* ----------list (POSTS) ----------*/
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    column-gap: 15px;
+    margin-top: -10px;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.container-home {
+    display:flex;
+    flex-direction: column;
+    row-gap: 10px; 
+    padding: 5px;
+    justify-content: center;
+    }
+    
+h4  {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    color:  #434242;
+    text-align: center;
+    padding: 5px; 
+    text-decoration-line: underline ; 
+    text-decoration-color: #EDDBC7;
+
+    }
+
 
 .card-title {
     font-family: 'Montserrat', serif;
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .card-subtitle {
@@ -98,7 +120,13 @@ h1 {
 }
 
 .card-text {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+#topdivhome { 
+    margin-top: 30px; 
+    margin-bottom: 10px; 
 }
 
 .card-body {
@@ -111,6 +139,19 @@ h1 {
     font-size: 15px;
 }
 
+.cardimage {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+.cardimage:hover {
+        transform: scale(1.1);
+    }
+
 
 /* ----------new (NEWPOST)---------- */
 
@@ -122,6 +163,7 @@ form {
     text-align: center;
     margin: auto;
     font-family: 'Montserrat', serif;
+    border-radius: 5px;
 }
 
 .btn {
@@ -144,65 +186,76 @@ form {
 nav.navbar {
     display: flex;
     justify-content: center;
-    background-color:  black;
-    height:50px;
-    
-}
-
-nav.navbar a {
-    margin-right: 20px;
-    color: white; 
-}
-
-a.homeblog {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-    letter-spacing: 2px;
-}
-
-.logo{
-    width: 40px;
+    background-color: #EDDBC7;
+    height:55px;
+    word-spacing: 25px;
 }
 
 .baselink {
     text-transform: uppercase;
-    background-color: black;
-    color:#fff;
+    background-color: #EDDBC7;
+    color:#434242;
     font-weight: 400;
-    font-size: 12px;
+    letter-spacing: 1px;
+    font-size: 14px;
     text-decoration: none;
-    letter-spacing: 3px;
     padding: 5px;
     transition: all 0.7s ease-in-out 0s;
     cursor: pointer;
-
 }
 
 .baselink:hover {
-    box-shadow: inset 300px 0 0 0 #fc0;
-    background-color: #fc0;
+    box-shadow: inset 300px 0 0 0 #DFD3C3;
+    background-color: #DFD3C3;
     border-radius: 1px;
     color: black;
     font-weight: 600;
+    border-radius: 3px;
+}
+
+#login-home:hover {
+    border-style: solid;
+    border-color:  #434242;
+    border-width: 3px; 
+    background-color: #EDDBC7;
+}
+
+#about:hover, #blog:hover, #lasvegas:hover, #newposts:hover, #posts:hover {
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    width: fit-content;
+    box-shadow: inset 300px 0 0 0 #EDDBC7;
+    background-color: #EDDBC7;
 }
 
 @media (max-width: 768px) {
-    /* nav bar  */
-    nav.menu {
+
+/* nav bar  */
+    nav.navbar {
         height:42px;
+        display: flex;
+        justify-content: center;
+        background-color: #EDDBC7;
+        word-spacing: 5px;
+    }
+
+    .baselink {
+        background-color: #EDDBC7;
     }
 
     #about, #lasvegas {
         display:none;
     }
 
-    /* cards from home.html */
+/* cards from home.html */
     .container-home {
         display:flex;
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
     } 
+
+    * {
+        font-size: 10px; 
+    }
 }

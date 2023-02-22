@@ -16,17 +16,19 @@
 </head>
 <body class="base-body">
     <nav class="navbar">
+        <div class="navbar-div">
+            <!-- <a class="linklogo" href="https://www.youtube.com/channel/UCOvvO6L7CArQP36S2lDDpJg"><img class="logo" src="../static/images/Vlogs.png"> -->
 
-        <div>
-            <a class="" href="https://www.youtube.com/channel/UCOvvO6L7CArQP36S2lDDpJg"><img class="logo" src="../static/images/g52018.png">
+            <a class="baselink" id="about" href="{% url 'about' %}"><i class="bi bi-question-circle"></i>About</a>
             <a class="baselink" id="blog" href="{% url 'home' %}">Blog</a>
-            <a class="baselink" id="posts" href="{% url 'list' %}">Posts</a>
-            <a class="baselink" id="newposts" href="{% url 'new' %}">NewPost</a>
-            <a class="baselink" id="about" href="{% url 'about' %}">About</a>
             <a class="baselink" id="lasvegas" href="https://www.visitlasvegas.com/las-vegas-strip/">LASVEGAS</a>
-        
+            <a class="baselink" id="newposts" href="{% url 'new' %}"><i class="bi bi-pencil-square"></i>NewPost</a>
+            <a class="baselink" id="posts" href="{% url 'list' %}">Posts</a>
+            <a  class="baselink" id="login-home" href="#"><i class="bi bi-box-arrow-in-left"></i>Login</a>
         </div>
+    
     </nav>
+    
 
     <div class="container">
     {% block content %}

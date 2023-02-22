@@ -6,7 +6,7 @@
 
 
 {% block content %}
-<h1>New Post</h1>
+<h1><i class="bi bi-pencil-square"></i> New Post</h1>
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p}}
