@@ -27,7 +27,7 @@
             <!-- <a  class="baselink" id="login-home" href="{% url 'login' %}"><i class="bi bi-box-arrow-in-left"></i>Login</a> -->
 
             {% if user.is_authenticated %}
-                <a class="baselink" id="about" href="{% url 'list' %}"><i class="bi bi-question-circle"></i>Posts</a>
+                <a class="baselink" id="about" href="{% url 'list' %}">Posts</a>
                 <a class="baselink" id="blog" href="{% url 'new' %}">NewPost</a>
                 <a class="baselink" id="lasvegas" href="{% url 'logout' %}"><i class="bi bi-box-arrow-right"></i>LogOut</a>
             {% else %}
