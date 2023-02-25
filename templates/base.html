@@ -22,9 +22,18 @@
             <a class="baselink" id="about" href="{% url 'about' %}"><i class="bi bi-question-circle"></i>About</a>
             <a class="baselink" id="blog" href="{% url 'home' %}">Blog</a>
             <a class="baselink" id="lasvegas" href="https://www.visitlasvegas.com/las-vegas-strip/">LASVEGAS</a>
-            <a class="baselink" id="newposts" href="{% url 'new' %}"><i class="bi bi-pencil-square"></i>NewPost</a>
-            <a class="baselink" id="posts" href="{% url 'list' %}">Posts</a>
-            <a  class="baselink" id="login-home" href="#"><i class="bi bi-box-arrow-in-left"></i>Login</a>
+            <!-- <a class="baselink" id="newposts" href="{% url 'new' %}"><i class="bi bi-pencil-square"></i>NewPost</a>
+            <a class="baselink" id="posts" href="{% url 'list' %}">Posts</a> -->
+            <!-- <a  class="baselink" id="login-home" href="{% url 'login' %}"><i class="bi bi-box-arrow-in-left"></i>Login</a> -->
+
+            {% if user.is_authenticated %}
+                <a class="baselink" id="about" href="{% url 'list' %}"><i class="bi bi-question-circle"></i>Posts</a>
+                <a class="baselink" id="blog" href="{% url 'new' %}">NewPost</a>
+                <a class="baselink" id="lasvegas" href="{% url 'logout' %}"><i class="bi bi-box-arrow-right"></i>LogOut</a>
+            {% else %}
+                <a  class="baselink" id="login-home" href="{% url 'login' %}"><i class="bi bi-box-arrow-in-left"></i>Login</a>
+            {% endif %}
+        
         </div>
     
     </nav>

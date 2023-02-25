@@ -8,6 +8,7 @@
 
 <h1>Posts</h1>
 {% for post in post_list %} 
+
     <div class="card-list">
         <div class="card-body-list">
             <h5 class= "card-title-list">{{ post.title }}</h5>
@@ -16,8 +17,8 @@
             <p class="card-text">{{ post.body|truncatechars:500 }}</p>
             <a href="{% url 'detail' post.id %}" class="card-link">Read more...</a> 
         </div>
-    
-    </div> 
+    </div>
+
     <br /> 
     {% endfor %}
 
