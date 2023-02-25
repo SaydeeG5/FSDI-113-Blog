@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,900;1,300&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&family=Sacramento&display=swap');
 
 
-
-/* ----------nav bar---------- */
 * {
     padding: 0; 
     margin: 0;
@@ -16,7 +14,6 @@ h1 {
     text-align: center;
     margin-top: 25px;
     margin-bottom: 25px; 
-    
 }
 
 body{
@@ -63,8 +60,6 @@ body{
 
 
 /* ----------home cards ----------*/
-
-
 .card {
     border-radius: 5px;
     overflow: hidden;     
@@ -90,15 +85,13 @@ main {
     column-gap: 15px;
     border-radius: 5px;
 }
-/* line 116 start of the cards  */
+/* line 116 start of the cards (home.html) */
 .container-home {
     display: flex;
     flex-direction: column;
     row-gap: 10px; 
     padding: 5px;
     justify-content: center; 
-   
-
 }
     
 h4  {
@@ -111,11 +104,14 @@ h4  {
     padding: 2px; 
     }
 
-
+/* ----------home.html and list.html share these--------- */
 .card-title {
     font-family: 'Montserrat', serif;
-    font-size: 15px;
+    font-size: 14px;
+    font-weight: 600;
     text-align: center;
+    letter-spacing: 1px;
+    background-color:  #EDDBC7;
 }
 
 .card-subtitle {
@@ -135,11 +131,63 @@ h4  {
     margin-top: 10px; 
 }
 
-.card-link {
-    color: #AACB73;
-    font-family: 'Merriweather', serif;
-    font-size: 15px;
+/* ----------card-link list.html---------- */
+.card-list { 
+    width: 60%; 
+    display:flex; 
+    flex-direction: column;
+    margin-left: auto; 
+    margin-right: auto;
 }
+
+.card-body-list {
+    margin-left: auto; 
+    margin-right: auto;
+
+}
+
+/* ---------- this is the h5 in list.html ---------- */
+.card-title-list {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 15px;
+    color:    #434242;
+    letter-spacing: 1px;
+    text-align: center;
+    background-color:  #EDDBC7;
+}
+
+
+.author {
+    font-size: 12px;
+    font-family: 'Montserrat', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+h6 {
+    color: #434242;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+    margin-left: auto; 
+    margin-right: auto; 
+    text-transform: uppercase;
+}
+
+
+.card-link {
+    color: #434242;
+    font-family: 'Merriweather', serif;
+    font-size: 10px;
+}
+
+.card-link:hover{
+    background-color: #EDDBC7;
+    text-decoration-color: #EDDBC7 ;
+    font-size: 12px; 
+    text-transform: uppercase;
+}
+
+/* ----------part of home.html card images--------- */
 
 .cardimage {
         display: block;
@@ -156,9 +204,7 @@ h4  {
 
 .oneandtwo {
     display: flex; 
-    flex-direction: column;
-    
-    
+    flex-direction: column;   
 }
 /* 2nd div from top  */
 #carouselExampleCaptions {
@@ -189,16 +235,16 @@ h4  {
 }
 
 
-/* ----------new (NEWPOST)---------- */
+/* ----------new (NEWPOST)----form is also iin edit------ */
 
 form {
     background-color: #EDDBC7;
-    padding: 50px;
+    padding: 5px; 
     width: 70%;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
     margin: auto;
-    font-family: 'Montserrat', serif;
+    font-family: 'Lato', sans-serif;
     border-radius: 5px;
 }
 
@@ -216,6 +262,78 @@ form {
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 3px;
 
+}
+/* 
+----------detail.html---------- */
+.detailh3 {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', serif;
+}
+.detail-class{
+    width: 60%; 
+    display:flex; 
+    flex-direction: column;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+strong { 
+    font-size: 10px; 
+}
+
+.detail-p { 
+    font-size: 12px; 
+}
+
+/* ----------the two delete buttons in detail.html---------- */
+.buttonsdetails {
+    display:flex;
+    flex-direction: row;
+}
+
+#btn-detail {
+    font-size: 10px; 
+    font-family: 'Montserrat', serif;
+    display: inline-block;
+}
+
+#btn-detail:hover {
+    font-size: 10px; 
+    letter-spacing: 1px;
+    
+}
+
+/* ----------edit button under detail.html----- */ 
+#btn-edit { 
+    font-size: 10px; 
+    font-family: 'Montserrat', serif;
+}
+
+#btn-edit:hover {
+    font-size: 10px; 
+    letter-spacing: 1px;
+}
+
+
+/* ----delete button under detail.html----- */
+#btn-delete {
+    font-size: 10px; 
+    font-family: 'Montserrat', serif;
+}
+
+#btn-delete:hover {
+    font-size: 10px; 
+    letter-spacing: 1px;
+    
+}
+
+
+
+/* ---------delete.html---------- */
+.delete-p {
+    text-align: center;
+    font-family: 'Lato', serif;
 }
 
 /*-----------navbar----------*/
@@ -263,6 +381,9 @@ nav.navbar {
     box-shadow: inset 300px 0 0 0 #EDDBC7;
     background-color: #EDDBC7;
 }
+
+
+/* ----------responsive--------- */
 
 @media (max-width: 768px) {
 

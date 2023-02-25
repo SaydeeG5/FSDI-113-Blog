@@ -6,10 +6,21 @@
 {% block content %}
 
 <h1>{{ post.title }}</h1>
-<h3>{{ post.subttitle }}</h3>
+<h3 class="detailh3" >{{ post.subtitle }}</h3>
+<h5 class="author"> {{ post.author }}</h5>
+<!-- <h5> {{ post.active }}</h5> -->
 <div class="detail-class">
-<strong>Created on : {{ post.created_on }}</strong>
-<p class="detail-p">{{ post.body}}</p>
-<a href="{% url 'list' %}" class="bi bi-box-arrow-in-left"></i>
+    <strong class="strong-detail">Created on : {{ post.created_on }}</strong>
+    <p class="detail-p">{{ post.body}}</p>
+
+    <div class="buttonsdetail">
+        <a href="{% url 'list' %}" ><button id="btn-detail" class="btn btn-secondary"><i class="bi bi-backspace"></i></button></a>
+
+        <a href="{% url 'edit' post.id %}"><button id="btn-edit" class="btn btn-secondary">Edit</button></a>
+
+        <a href="{% url 'delete' post.id %}
+        " ><button id="btn-delete" class="btn btn-secondary">Delete<i class="bi bi-trash-fill"></i></button></a>
+    </div>
 </div>
+
 {% endblock content %}}
