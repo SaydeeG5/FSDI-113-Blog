@@ -3,7 +3,7 @@ from django.views.generic import (
     DetailView,
     UpdateView, 
     DeleteView, 
-    ListView
+    ListView,
 )
 
 from .models import Post 
@@ -16,6 +16,7 @@ from django.contrib.auth.mixins import (
 class PostListView(ListView):
     template_name = "posts/list.html"
     model = Post 
+    # queryset=Post.objects.all()
 
 class PostDetailView(DetailView):
     template_name = "posts/detail.html"
@@ -46,3 +47,12 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         post = self.get_object()
         return user == post.author 
 
+class BlogSearchView(ListView):
+    template_name = "posts/search.html"
+    model = Post 
+
+    def get_queryset(self):
+        query = self.request.GET.get("q")
+        return Post.objects.filter(title__icontains=query).order_by("created_on")
+        
+        

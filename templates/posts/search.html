@@ -1,10 +1,23 @@
 {% extends 'base.html' %}
 
-{% block title %}Search "{{ post.title }}" {% endblock title %}
+{% block title %}Search {% endblock title %}
 
 
 {% block content %}
 
-<h6> You Searched For ...</h6>
+<h1> Your Search Result ... </h1>
+
+<ul>
+    {% for list in object_list %}
+    <form>
+        {{list.author}}
+        {{list.title}}
+        {{list.subtitle}}
+        {{list.body}}
+        {{list.created_on}}
+    </form>
+    
+    {% endfor %}
+</ul>
 
 {% endblock content %}

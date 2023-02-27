@@ -70,11 +70,11 @@ body{
     overflow: hidden; 
 }
 
-.btn {
+/* .btn {
     background-color:  #EDDBC7;
     color:white;
     font-family: 'Raleway', sans-serif;
-}
+} */
 
 main {
     width: 100%;
@@ -92,6 +92,7 @@ main {
     row-gap: 10px; 
     padding: 5px;
     justify-content: center; 
+    margin-top: 30px; 
 }
     
 h4  {
@@ -220,12 +221,13 @@ h6 {
 .secondpart-home {
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
-    grid-gap: 15px; 
+    grid-gap: 10px; 
     width: 100%;
+    justify-content: space-around;
 }
 
 .gridpic {
-    width: 200px; 
+    width: 250px; 
 }
 
 .grid-p {
@@ -253,15 +255,16 @@ form {
     color: #434242;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #EDDBC7;
     color: #434242;
     border-color:#332C39;
     text-transform: uppercase;
     font-family: 'Bebas Neue', cursive;
-    letter-spacing: 3px;
-
+    border-color:#332C39;
+    color: #434242;
 }
+
 /* 
 ----------detail.html---------- */
 .detailh3 {
@@ -300,7 +303,6 @@ strong {
 #btn-detail:hover {
     font-size: 10px; 
     letter-spacing: 1px;
-    
 }
 
 /* ----------edit button under detail.html----- */ 
@@ -314,7 +316,6 @@ strong {
     letter-spacing: 1px;
 }
 
-
 /* ----delete button under detail.html----- */
 #btn-delete {
     font-size: 10px; 
@@ -327,8 +328,6 @@ strong {
     
 }
 
-
-
 /* ---------delete.html---------- */
 .delete-p {
     text-align: center;
@@ -338,10 +337,11 @@ strong {
 /*-----------navbar----------*/
 nav.navbar {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     background-color: #EDDBC7;
-    height:55px;
-    word-spacing: 25px;
+    height:40px;
+    word-spacing: 10px;
 }
 
 .baselink {
@@ -350,11 +350,12 @@ nav.navbar {
     color:#434242;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
-    padding: 5px;
     transition: all 0.7s ease-in-out 0s;
     cursor: pointer;
+    margin-top: -10px; 
+    padding: 5px; 
 }
 
 .baselink:hover {
@@ -373,13 +374,54 @@ nav.navbar {
     background-color: #EDDBC7;
 }
 
-#about:hover, #blog:hover, #lasvegas:hover, #newposts:hover, #posts:hover {
+#logout:hover {
+    border-style: solid;
+    border-color:  #434242;
+    border-width: 3px; 
+    background-color: #EDDBC7;
+}
+
+#about:hover, #blog:hover, #lasvegas:hover, #newpost:hover, #posts:hover {
     border-bottom-style: solid;
     border-bottom-width: 3px;
     width: fit-content;
     box-shadow: inset 300px 0 0 0 #EDDBC7;
     background-color: #EDDBC7;
 }
+
+/* ----------search---------- */
+
+.search-blog {
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 25px; 
+    background-color: whitesmoke;
+}
+
+#form-blog {
+    background-color:  #FEFCF3;
+}
+
+#buttonsearch {
+    font-size: 12px; 
+    padding: 5px; 
+    border-radius: 5px;
+    letter-spacing: 2px; 
+    background-color: #EDDBC7;
+    color: #434242;
+    border-color:#332C39;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#buttonsearch:hover {
+    background-color: #43424287;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 3px;
+    border-color:  #EDDBC7;
+}
+
 
 /* ----------log out --------- */
 .logout-p {
@@ -391,12 +433,10 @@ nav.navbar {
 @media (max-width: 768px) {
 
 /* nav bar  */
-    nav.navbar {
-        height:42px;
-        display: flex;
-        justify-content: center;
+    nav.navbar{
+        height:45px;
+        font-family: 'Bebas Neue', cursive;
         background-color: #EDDBC7;
-        word-spacing: 5px;
     }
 
     .baselink {
@@ -407,20 +447,23 @@ nav.navbar {
         display:none;
     }
 
-/* cards from home.html */
-    .container-home {
-        display:flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-    } 
-
     main {
         display: flex; 
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
     }
+
+/* cards from home.html */
+    /* .container-home {
+        display:flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+
+
+
     * {
         font-size: 10px; 
     }

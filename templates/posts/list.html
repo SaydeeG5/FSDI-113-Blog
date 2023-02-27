@@ -7,6 +7,16 @@
 {% block content %}
 
 <h1>Posts</h1>
+
+    <form id="form-blog" action="{% url 'search' %}" method="get">
+        {% csrf_token %}
+        <input id="inputsearch"  type="text" name="q" placeholder="Search Blog..." >
+        <button id="buttonsearch"  type="submit" >Search</button>
+    </form>
+</br>
+</br>
+
+
 {% for post in post_list %} 
 
     <div class="card-list">
@@ -18,8 +28,7 @@
             <a href="{% url 'detail' post.id %}" class="card-link">Read more...</a> 
         </div>
     </div>
-
-    <br /> 
+</br>
     {% endfor %}
 
 {% endblock content %}
