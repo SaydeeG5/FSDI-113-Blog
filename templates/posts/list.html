@@ -10,7 +10,7 @@
 
     <form id="form-blog" action="{% url 'search' %}" method="get">
         {% csrf_token %}
-        <input id="inputsearch"  type="text" name="q" placeholder="Search Blog..." >
+        <input id="inputsearch"  type="text" name="q" placeholder="Search Title..." >
         <button id="buttonsearch"  type="submit" >Search</button>
     </form>
 </br>

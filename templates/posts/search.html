@@ -10,10 +10,14 @@
 <ul>
     {% for list in object_list %}
     <form>
-        {{list.author}}
-        {{list.title}}
+        -{{list.author}} -
+    </br>
+        {{list.title}} -
+    
         {{list.subtitle}}
+    </br>
         {{list.body}}
+    </br>
         {{list.created_on}}
     </form>
     
