@@ -20,6 +20,9 @@
     </br>
         {{list.created_on}}
     </form>
+
+    {% empty %}
+    <form>Nothing found</form>
     
     {% endfor %}
 </ul>

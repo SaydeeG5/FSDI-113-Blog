@@ -16,7 +16,7 @@ from django.contrib.auth.mixins import (
 class PostListView(ListView):
     template_name = "posts/list.html"
     model = Post 
-    # queryset=Post.objects.all()
+
 
 class PostDetailView(DetailView):
     template_name = "posts/detail.html"
