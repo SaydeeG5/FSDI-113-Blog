@@ -428,6 +428,36 @@ nav.navbar {
     text-align: center;
 }
 
+
+/* ----------registration sign up form ---------- */
+#signup-form {
+    background-color: #EDDBC7;
+    padding: 5px; 
+    width: 50%;
+    font-size: 12px;
+    /* text-align: center; */
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+    border-radius: 5px;
+}
+
+#signup-btn{
+    background-color:#F0EEED;
+    border-color:#332C39;
+    color: #434242;
+}
+
+#signup-btn:hover {
+    background-color: #EDDBC7;
+    color: #434242;
+    border-color:#332C39;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    border-color:#332C39;
+    color: #434242;
+}
+
+
 /* ----------responsive--------- */
 
 @media (max-width: 768px) {

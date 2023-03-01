@@ -10,15 +10,15 @@
 <ul>
     {% for list in object_list %}
     <form>
-        -{{list.author}} -
+        <strong> *{{list.author}} </strong>
     </br>
-        {{list.title}} -
+        Title: {{list.title}} -
     
-        {{list.subtitle}}
+        Subtitle: {{list.subtitle}}
     </br>
         {{list.body}}
     </br>
-        {{list.created_on}}
+        ----------{{list.created_on}}----------
     </form>
 
     {% empty %}
@@ -28,3 +28,4 @@
 </ul>
 
 {% endblock content %}
+

@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)md8=tadgjt50a1hs_-v1gqh)mlu%2zbapvl*g@pvwmkwlfusb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # my apps 
     "pages",
     "posts",
+    "accounts",
 ]
 
 MIDDLEWARE = [

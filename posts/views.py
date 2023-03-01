@@ -25,8 +25,12 @@ class PostDetailView(DetailView):
 class PostCreateView(LoginRequiredMixin, CreateView):
     template_name = "posts/new.html"
     model = Post
-    fields = ["title", "subtitle", "author", "body", "active"]
+    fields = ["title", "subtitle", "body", "active"]
 
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+    
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     template_name = "posts/edit.html"
     model = Post 
@@ -53,6 +57,6 @@ class BlogSearchView(ListView):
 
     def get_queryset(self):
         query = self.request.GET.get("q")
-        return Post.objects.filter(title__icontains=query).order_by("created_on")
+        return Post.objects.filter(title__icontains=query)| Post.objects.filter(body__icontains=query)
         
         

@@ -27,6 +27,7 @@
                 <a class="baselink" id="newpost" href="{% url 'new' %}">NewPost</a>
                 <a class="baselink" id="logout" href="{% url 'logout' %}"><i class="bi bi-box-arrow-right"></i>LogOut</a>
             {% else %}
+                <a  class="baselink" id="signup-home" href="{% url 'signup' %}"><i class="bi bi-person-add"></i>SignUP</a>
                 <a  class="baselink" id="login-home" href="{% url 'login' %}"><i class="bi bi-box-arrow-in-left"></i>Login</a>
             {% endif %}
 
