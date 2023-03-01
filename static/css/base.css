@@ -428,7 +428,6 @@ nav.navbar {
     text-align: center;
 }
 
-
 /* ----------registration sign up form ---------- */
 #signup-form {
     background-color: #EDDBC7;
@@ -445,6 +444,7 @@ nav.navbar {
     background-color:#F0EEED;
     border-color:#332C39;
     color: #434242;
+    padding: 5px; 
 }
 
 #signup-btn:hover {
