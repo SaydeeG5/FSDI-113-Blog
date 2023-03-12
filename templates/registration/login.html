@@ -9,11 +9,11 @@
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="Log In" class="btn btn-light">
-</form>
-
-<small>Forgot your password? 
+    <input type="submit" value="Log In" class="btn btn-light"> </br> </br>
+    <small>Forgot your password? 
     <a href="{% url 'password_reset' %}">Click here</a> to reset it. 
 </small>
+</form>
+
 
 {% endblock content %}
